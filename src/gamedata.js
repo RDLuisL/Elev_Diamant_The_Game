@@ -82,7 +82,7 @@ GameData.floors =
     },
      {
         id: "battlefield",
-        name: "Carabineros",
+        name: "Cerro Santo Domingo",
         spawnIds: [
             {id: "soldier", chance: 4},
             {id: "horse", chance: 1},
