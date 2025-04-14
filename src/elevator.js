@@ -245,7 +245,7 @@ Elevator.prototype.renderFg = function(ctx) {
     Elevator.sprite.draw(ctx, 0, 0);
     
     ctx.textAlign = 'center';
-    whiteBitmapFont.drawText(ctx, 'SCORE: ' + this.level.score, 4 * 6, 0);
+    whiteBitmapFont.drawText(ctx, 'PUNTAJE: ' + this.level.score, 4 * 6, 0);
     
     if ( this.comboText !== null ) {
         whiteBitmapFont.drawText(ctx, this.comboText, 4 * 6, -1 * 6);   

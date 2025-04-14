@@ -58,7 +58,7 @@ dat.utils.common = (function () {
   /**
    * Band-aid methods for things that should be a lot easier in JavaScript.
    * Implementation and structure inspired by underscore.js
-   * http://documentcloud.github.com/underscore/
+   * http://documentcloud.github.com/under/
    */
 
   return { 

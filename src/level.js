@@ -163,21 +163,28 @@ Level.prototype.render = function(ctx) {
 
         if (this.state === Level.State.TITLE_SCREEN) {
             Level.titleSprite.drawRotated(ctx, ctx.canvas.width * 0.5, ctx.canvas.height * 0.3, 0);
-            bigBitmapFont.drawText(ctx, 'LD34 GAME BY: OLLI ETUAHO, KIMMO KESKINEN, SAKARI LEPPÄ, VALTTERI HEINONEN & ANASTASIA DIATLOVA',
+            bigBitmapFont.drawText(ctx, 'luislunatech.com',
                                    ctx.canvas.width * 0.5 - (mathUtil.fmod(this.time * 0.05, 1) - 0.5) * ctx.canvas.width * 5, ctx.canvas.height * 0.57);
         } else if (this.state === Level.State.FAIL) {
             Level.failSprite.drawRotated(ctx, ctx.canvas.width * 0.5, ctx.canvas.height * 0.4, 0);
-            bigBitmapFont.drawText(ctx, 'FINAL SCORE: ' + this.score, ctx.canvas.width * 0.5, ctx.canvas.height * 0.6);
+            bigBitmapFont.drawText(ctx, 'PUNTAJE FINAL: ' + this.score, ctx.canvas.width * 0.5, ctx.canvas.height * 0.6);
         }
 
         if (this.flashText) {
             var key = game.input.getKeyInstruction(game.startPress, 0);
-            var whatNow = 'RESTART';
+            var whatNow = 'VOLVER A EMPEZAR';
             if (this.state === Level.State.TITLE_SCREEN) {
-                whatNow = 'START';
+                whatNow = 'EMPEZAR';
             }
-            bigBitmapFont.drawText(ctx, 'PRESS ' + key + ' TO ' + whatNow, ctx.canvas.width * 0.5, ctx.canvas.height * 0.7);
+        
+            // Línea 1: PRESS ENTER PARA
+            bigBitmapFont.drawText(ctx, 'PRESIONA ' + key + ' PARA', ctx.canvas.width * 0.5, ctx.canvas.height * 0.67);
+            
+            // Línea 2: EMPEZAR (o RESTART)
+            bigBitmapFont.drawText(ctx, whatNow, ctx.canvas.width * 0.5, ctx.canvas.height * 0.73);
         }
+
+        
     }
     ctx.globalAlpha = 1.0;
     

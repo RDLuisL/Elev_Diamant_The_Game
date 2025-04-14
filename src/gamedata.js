@@ -4,7 +4,7 @@ GameData.floors =
 [
     {
         id: "acme",
-        name: "Acme",
+        name: "Ferreteria",
         spawnIds: [
             {id: "customer", chance: 4},
             {id: "customerette", chance: 2},
@@ -17,7 +17,7 @@ GameData.floors =
     },
     {
         id: "stables",
-        name: "Stables",
+        name: "Moneda",
         spawnIds: [
             {id: "customer", chance: 3},
             {id: "customerette", chance: 3},
@@ -31,7 +31,7 @@ GameData.floors =
     },
     {
         id: "graveyard",
-        name: "Graveyard",
+        name: "Plaza de Armas",
         spawnIds: [
             {id: "customer", chance: 2},
             {id: "customerette", chance: 2},
@@ -42,7 +42,7 @@ GameData.floors =
     },
     {
         id: "lounge",
-        name: "Business lounge",
+        name: "Restaurant",
         spawnIds: [
             {id: "customer", chance: 2},
             {id: "customerette", chance: 2},
@@ -55,7 +55,7 @@ GameData.floors =
     },
     {
         id: "garage",
-        name: "Garage",
+        name: "Estacionamiento",
         spawnIds: [
             {id: "customer", chance: 6},
             {id: "customerette", chance: 2},
@@ -72,7 +72,7 @@ GameData.floors =
     },*/
     {
         id: "clowncamp",
-        name: "Clown bootcamp",
+        name: "Sky Costanera",
         spawnIds: [
             {id: "clown", chance: 5},
             {id: "horse", chance: 2},
@@ -82,7 +82,7 @@ GameData.floors =
     },
      {
         id: "battlefield",
-        name: "Battlefield",
+        name: "Carabineros",
         spawnIds: [
             {id: "soldier", chance: 4},
             {id: "horse", chance: 1},
@@ -92,7 +92,7 @@ GameData.floors =
     },
     {
         id: "catcafe",
-        name: "Cat Cafe",
+        name: "Cafe Haiti",
         spawnIds: [
             {id: "customer", chance: 2},
             {id: "customerette", chance: 4},
