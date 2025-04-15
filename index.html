@@ -172,15 +172,7 @@ window['start'] = function() {
         Game.parameters.initGUI();
     }
     
-    GJS.commonUI.createUI({
-        parent: document.body,
-        fullscreenElement: document.body,
-        twitterAccount: 'Oletus',
-        fillStyle: '#ffffff',
-        opacity: 0.4,
-        scale: 0.8
-    });
-    
+
     resizer = new CanvasResizer({mode: CanvasResizer.Mode.MINIMUM_HEIGHT, width: 192, height: 312});
     game = new Game(resizer);
     resizer.createPointerEventListener(game, true);
